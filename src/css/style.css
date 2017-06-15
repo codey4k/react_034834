@@ -31,8 +31,25 @@ p {
     width : 100%;
     height : 800px;
     background : #fff;
+    position : relative;
+    display : flex;
 }
 .header img {
     width : 100%;
     height : 100%;
+    position : absolute;
+}
+
+.header h1 {
+    
+    margin : auto;
+    z-index: 150;
+}
+.menu {
+    
+    background : rgba(200, 200, 200, 0.3);
+    width : 100%;
+    height : 100px;
+    position : fixed;
+    z-index : 1000;
 }
