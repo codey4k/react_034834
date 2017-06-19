@@ -4,9 +4,9 @@ class Menu extends React.Component {
     render(){
         return(
             <div className="menu">
-                <div class="container">
+                <div className="container">
                     <h1>Logo</h1>
-                    <div class="hamburger"/>
+                    <div className="hamburger"/>
                 </div>
             </div>
         )
