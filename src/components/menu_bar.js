@@ -6,7 +6,9 @@ class Menu extends React.Component {
             <div className="menu">
                 <div className="container">
                     <h1>Logo</h1>
-                    <div className="hamburger"/>
+                    <div className="hamburger">
+                        <div className="hamicon"/>
+                    </div>
                 </div>
             </div>
         )
