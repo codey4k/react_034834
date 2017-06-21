@@ -4,7 +4,7 @@ class Menu extends React.Component {
     render(){
         return(
             <div className="menu">
-                <div className="container">
+                <div className="menu__container">
                     <h1>Logo</h1>
                     <div className="hamburger">
                         <div className="hamicon"/>

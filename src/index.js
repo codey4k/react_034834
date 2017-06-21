@@ -6,7 +6,7 @@ import Header from './components/Header.js'
 import Menu from './components/menu_bar.js'
 import Services from './components/services.js'
 //style
-require('./css/style.css')
+require('./css/main.scss')
 require('./assets/hero.png')
 
 
