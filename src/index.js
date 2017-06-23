@@ -5,6 +5,8 @@ import ReactDOM from 'react-dom'
 import Header from './components/Header.js'
 import Menu from './components/menu_bar.js'
 import Services from './components/services.js'
+import Main from './components/main_content.js'
+
 //style
 require('./css/main.scss')
 require('./assets/hero.png')
@@ -19,6 +21,7 @@ class App extends React.Component {
                 <Menu />
                 <Header />
                 <Services />
+                <Main />
             </div>
         )
     }

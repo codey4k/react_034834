@@ -65,5 +65,11 @@ body {
 .services {
     position: relative;
     top : 80px;
-    @include whb(100%,200px,olive);
+    @include whb(100%,200px,#bbb);
+}
+
+.main {
+    top : 80px;
+    position : relative;
+    @include whb(100%,400px,orange);
 }
