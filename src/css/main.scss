@@ -45,9 +45,9 @@ body {
 }
 
 .header {
+    position : relative;
     top : 80px;
     display : flex;
-    position : relative;
     @include whb(100%,300px,transparent);
     
     h1 {
@@ -65,11 +65,18 @@ body {
 .services {
     position: relative;
     top : 80px;
+    display : flex;
     @include whb(100%,200px,#bbb);
+    &__container {
+        width : 80%;
+        height : 80%;
+        margin : auto;
+        background : olive;
+    }
 }
 
 .main {
-    top : 80px;
     position : relative;
+    top : 80px;
     @include whb(100%,400px,orange);
 }
