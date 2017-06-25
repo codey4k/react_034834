@@ -80,3 +80,9 @@ body {
     top : 80px;
     @include whb(100%,400px,orange);
 }
+
+.footer {
+    position : relative;
+    top : 80px;
+    @include whb(100%,300px,#333);
+}

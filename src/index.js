@@ -6,6 +6,7 @@ import Header from './components/Header.js'
 import Menu from './components/menu_bar.js'
 import Services from './components/services.js'
 import Main from './components/main_content.js'
+import Footer from './components/footer.js'
 
 //style
 require('./css/main.scss')
@@ -22,6 +23,7 @@ class App extends React.Component {
                 <Header />
                 <Services />
                 <Main />
+                <Footer />
             </div>
         )
     }
