@@ -78,7 +78,26 @@ body {
 .main {
     position : relative;
     top : 80px;
-    @include whb(100%,400px,orange);
+    display : grid;
+    grid-template-columns : repeat(4,1fr);
+    grid-template-rows : repetat(4,1fr);
+    grid-gap : 5px;
+    @include whb(100%,500px,#fff);
+    
+    > .large {
+        grid-column : span 2;
+        position : relative;
+        background : #555;
+    }
+    
+    > .description {
+        background : #eee;
+    }
+    
+    > .red {
+        background : tomato;
+    }
+    
 }
 
 .footer {
