@@ -21,7 +21,7 @@ class Main extends React.Component {
                 'item large'
             ],
             
-            div = item.map( i => <div className={i} ></div> )
+            div = item.map( i => i === 'item large' ? <div className={i}><img src="http://geeksnation.org/wp-content/uploads/2016/10/Most-Beautiful-Girl.jpg" alt="img"/></div>:<div className={i}></div>)
         
         
         

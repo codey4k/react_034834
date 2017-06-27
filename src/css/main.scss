@@ -20,7 +20,7 @@ body {
     display : flex;
     position : fixed;
     z-index : 1000;
-    box-shadow : 0 5px 20px #222;
+    // box-shadow : 0 5px 20px #222;
     @include whb(100%,80px,#eee);
     
     &__container {
@@ -48,7 +48,7 @@ body {
     position : relative;
     top : 80px;
     display : flex;
-    @include whb(100%,300px,transparent);
+    @include whb(100%,350px,transparent);
     
     h1 {
         margin : auto;
@@ -66,12 +66,18 @@ body {
     position: relative;
     top : 80px;
     display : flex;
-    @include whb(100%,200px,#bbb);
+    @include whb(100%,200px, transparent);
     &__container {
         width : 80%;
         height : 80%;
         margin : auto;
-        background : olive;
+        background : transparent;
+        display : grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-column-gap : 10px;
+        div {
+            background : #999;
+        }
     }
 }
 
@@ -82,8 +88,13 @@ body {
     grid-template-columns : repeat(4,1fr);
     grid-template-rows : repetat(4,1fr);
     grid-gap : 5px;
-    @include whb(100%,500px,#fff);
+    @include whb(100%,550px,#fff);
     
+    > .large img {
+        position : absolute;
+        width : 100%;
+        height : 100%;
+    }
     > .large {
         grid-column : span 2;
         position : relative;
@@ -95,7 +106,7 @@ body {
     }
     
     > .red {
-        background : tomato;
+        background : #B71C1C;
     }
     
 }
@@ -103,5 +114,27 @@ body {
 .footer {
     position : relative;
     top : 80px;
+    
+    display : grid;
+    grid-template-columns : repeat(2, 1fr);
+    grid-template-rows : 1fr 50px;
     @include whb(100%,300px,#333);
+    
+    &__left {
+        background : olive;
+    }
+    &__right {
+        background : green;
+    }
+    &__copyright {
+        grid-column : span 2;
+        background : #444;
+        display : flex;
+        
+        p {
+            color : #eee;
+            margin : auto;
+            font-size : .8em;
+        }
+    }
 }

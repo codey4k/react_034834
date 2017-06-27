@@ -14,6 +14,9 @@ class Services extends React.Component {
         return(
             <div className="services">
                 <div className="services__container">
+                    <div ></div>
+                    <div ></div>
+                    <div ></div>
                 </div>
             </div>
         )
