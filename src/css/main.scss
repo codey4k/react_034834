@@ -30,6 +30,11 @@ body {
         align-items : center;
         @include whb(80%,80%,transparent);
         
+        .logo {
+            width : 30px;
+            height : 40px;
+        }
+        
         .hamburger {
             $ham : #666;
             display : flex;
@@ -122,11 +127,13 @@ body {
     @include whb(100%,300px,#333);
     
     &__left {
-        background : olive;
+        background : #666;
     }
+    
     &__right {
-        background : green;
+        background : #777;
     }
+    
     &__copyright {
         grid-column : span 2;
         background : #444;
