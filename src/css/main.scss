@@ -80,10 +80,20 @@ body {
         display : grid;
         grid-template-columns: repeat(3,1fr);
         grid-column-gap : 10px;
-        div {
-            background : #999;
-        }
+ 
     }
+    &__item {
+        display : flex;
+        justify-content : center;
+        align-items : center;
+        flex-direction : column;
+        background : #999;
+    }
+    
+}
+
+.svg {
+    border : 1px solid #333;
 }
 
 .main {
