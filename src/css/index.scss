@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400');
+
+@import './mixins.scss';
+
+@import '../components/header/header.scss';
+
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+    transition : all .6s;
+}
+
+body {
+    background : #eee;
+    font-family : Helvetica;
+}
+
+.wrap-app {
+    @include whb(100%, 100vh, blue);
+}

@@ -1,3 +1,7 @@
+//variables
+$theme : tomato;
+
+//mixins
 @mixin whb($w,$h,$b) {
     width : $w;
     height : $h;

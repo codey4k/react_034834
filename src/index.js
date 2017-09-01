@@ -2,15 +2,14 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 //components
-import Header from './components/Header.js'
-import Menu from './components/menu_bar.js'
-import Services from './components/services.js'
-import Main from './components/main_content.js'
-import Footer from './components/footer.js'
+import Header from './components/header/header.js'
+import Main from './components/main/main.js'
+import Footer from './components/footer/footer.js'
 
 //style
-require('./css/main.scss')
-require('./assets/hero.png')
+import './css/index.scss'
+
+// import hero from './assets/hero.png'
 
 
 //componente contenedor
@@ -18,10 +17,8 @@ require('./assets/hero.png')
 class App extends React.Component {
     render(){
         return(
-            <div className="container">
-                <Menu />
+            <div className="wrap-app">
                 <Header />
-                <Services />
                 <Main />
                 <Footer />
             </div>
