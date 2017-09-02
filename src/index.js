@@ -1,23 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-//components
-import Header from './components/header/header.js'
-import Main from './components/main/main.js'
-import Footer from './components/footer/footer.js'
+import './index.scss'
 
-//style
-import './css/index.scss'
+import Header from './components/header/header'
+import Main from './components/main/main'
+import Footer from './components/footer/footer'
 
-// import hero from './assets/hero.png'
-
-
-//componente contenedor
 
 class App extends React.Component {
-    render(){
+    render() {
         return(
-            <div className="wrap-app">
+            <div className="site-wrap">
                 <Header />
                 <Main />
                 <Footer />
@@ -26,5 +20,5 @@ class App extends React.Component {
     }
 }
 
-ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render(<App />, document.body)
 

@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,400');
 
-@import './mixins.scss';
+@import './styles/modules.scss';
 
-@import '../components/header/header.scss';
 
 * {
     margin : 0;
@@ -16,6 +15,6 @@ body {
     font-family : Helvetica;
 }
 
-.wrap-app {
-    @include whb(100%, 100vh, blue);
+.site-wrap {
+    @include whb(100%, 100vh, #eee);
 }
