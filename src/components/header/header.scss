@@ -4,4 +4,97 @@
     width : 100%;
     height : 300px;
     background : $theme;
+    overflow : hidden;
+    .bubble {
+        position : relative;
+        width : 100%;
+        height : 300px;
+        // background : orange;
+        z-index : 1;
+        li {
+            position : absolute;
+            // left : 20%;
+            // width : 100px;
+            // height : 100px;
+            background : rgba(#fff, .2);
+            border-radius : 50%;
+            list-style : none;
+            box-shadow : inset 0 15px 25px rgba(#fff,.2), inset 0 0 15px rgba(#ddd, .1);
+            animation : up 10s infinite linear;
+            
+            &:nth-child(1){
+                width : 30px;
+		        height : 30px;
+		        left : 40%;
+		        animation-delay : 21s;
+            }
+            &:nth-child(2){
+                width : 50px;
+		        height : 50px;
+		        left : 65%;
+		        animation-delay : 45s;
+            }
+            &:nth-child(3){
+                width : 70px;
+		        height : 70px;
+		        left : 25%;
+		        animation-delay : 35s;
+            }
+            &:nth-child(4){
+                width : 80px;
+		        height : 80px;
+		        left : 75%;
+		        animation-delay : 20s;
+            }
+            &:nth-child(5){
+                width : 90px;
+		        height : 90px;
+		        left : 40%;
+		        animation-delay : 30s;
+            }
+            &:nth-child(6){
+                width : 100px;
+		        height : 100px;
+		        left : 80%;
+		        animation-delay : 15s;
+            }
+            &:nth-child(7){
+                width : 100px;
+		        height : 100px;
+		        left : 5%;
+		        animation-delay : 11s;
+            }
+            &:nth-child(8){
+                width : 65px;
+		        height : 65px;
+		        left : 53%;
+		        animation-delay : 15s;
+            }
+            &:nth-child(9){
+                width : 25px;
+		        height : 25px;
+		        left : 65%;
+		        animation-delay : 15s;
+            }
+            &:nth-child(10){
+                width : 30px;
+		        height : 30px;
+		        left : 18%;
+		        animation-delay : 15s;
+            }
+            
+            
+            @keyframes up 
+	            0%{
+		            transform : translateY(0);
+	                
+	            }
+	            100%{
+		            transform : translateY(-700px) rotate(600deg);
+	                
+	            }
+        }
+    }
+    
 }
+
