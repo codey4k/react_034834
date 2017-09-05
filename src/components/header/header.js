@@ -6,9 +6,9 @@ class Header extends React.Component {
     
     
     render() {
-        let range = (start, end) => Array.from(Array(end + 1).keys()).slice(start)
-        let li = range(1, 10)
-        let item = li.map( () => <li> </li>)
+        let range = (start, end) => Array.from(Array(end + 1).keys()).slice(start),
+            li    = range(1, 100),
+            item  = li.map( () => <li> </li>)
         
         return(
             <div className="header">
