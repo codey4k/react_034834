@@ -13,6 +13,14 @@
 body {
     background : #eee;
     font-family : Helvetica;
+    &::-webkit-scrollbar {
+        width : 6px;
+        background : #fff;
+    }
+    &::-webkit-scrollbar-thumb {
+        background : $theme;
+        border-radius : 5px;
+    }
 }
 
 .site-wrap {
