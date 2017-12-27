@@ -6,12 +6,14 @@ import './index.scss'
 import Header from './components/header/header'
 import Main from './components/main/main'
 import Footer from './components/footer/footer'
+import Menubar from './components/menubar/menubar'
 
 
 class App extends React.Component {
     render() {
         return(
             <div className="site-wrap">
+                <Menubar />
                 <Header />
                 <Main />
                 <Footer />
