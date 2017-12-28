@@ -17,6 +17,10 @@ export default class Menubar extends React.Component {
         window.addEventListener('scroll', this.scrollHandler)
     }
     
+    componentWillUnMount(){
+        window.removeEventListener('scroll', this.scrollHandler)
+    }
+    
     scrollHandler(){
         let scroll = document.documentElement.scrollTop || document.body.scrollTop
         
