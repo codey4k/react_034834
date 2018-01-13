@@ -9,6 +9,7 @@ export default class Menubar extends React.Component {
     componentWillMount() {
         this.state = {
             height : 80,
+            bg : '#fff',
             background : 'transparent'
         }
     }
@@ -50,10 +51,18 @@ export default class Menubar extends React.Component {
             },
             container : {
                 width : '80%',
-                height : 'auto',
+                height : '80%',
                 margin : 'auto',
+                display : 'flex',
                 alignItems : 'center',
+                // flexDirection : 'column',
                 justifyContent : 'space-between'
+            },
+            icon : {
+                width : 25,
+                height : 2,
+                background : this.state.bg,
+                boxShadow:'0 5px 0 0 #fff, 0 -5px 0 0 #fff'
             }
         }
         
@@ -62,7 +71,7 @@ export default class Menubar extends React.Component {
             <div className="menu" style={MenuStyles.padre}>
                 <div className="menu__container" style={MenuStyles.container}>
                     <h2>Logo</h2>
-                    <div class="menu__icon"></div>
+                    <div class="menu__icon" style={MenuStyles.icon}></div>
                 </div>
             </div>
         )
