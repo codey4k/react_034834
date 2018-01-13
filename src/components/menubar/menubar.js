@@ -71,7 +71,7 @@ export default class Menubar extends React.Component {
             <div className="menu" style={MenuStyles.padre}>
                 <div className="menu__container" style={MenuStyles.container}>
                     <h2>Logo</h2>
-                    <div class="menu__icon" style={MenuStyles.icon}></div>
+                    <div className="menu__icon" style={MenuStyles.icon}></div>
                 </div>
             </div>
         )

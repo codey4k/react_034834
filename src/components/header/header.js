@@ -8,7 +8,7 @@ class Header extends React.Component {
     render() {
         let range = (start, end) => Array.from(Array(end + 1).keys()).slice(start),
             li    = range(1, 100),
-            item  = li.map( () => <li> </li>)
+            item  = li.map( (i) => <li key={i}> </li>)
         
         return(
             <div className="header">
