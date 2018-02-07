@@ -8,12 +8,7 @@ class Main extends React.Component {
         return(
             <div className="main">
                 <div className="main__container">
-                    <div className="example"></div>
-                    
-                    <div className="section">
-                        <div className="section--one"></div>
-                        <div className="section--two"></div>
-                    </div>
+                   
                 </div>
             </div>
         )
