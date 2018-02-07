@@ -6,9 +6,34 @@
 * {
     margin : 0;
     padding : 0;
+    outline : none;
     box-sizing : border-box;
     transition : all .6s;
 }
+
+
+/* ------ reset default styles*/
+div,
+img,
+main,
+header,
+footer,
+section {
+    display : block;
+}
+
+li,
+ol,
+ul {
+    list-style : none;
+}
+
+a {
+    text-decoration : none;
+}
+
+/*----------------------------*/
+
 
 body {
     background : #eee;
@@ -24,5 +49,6 @@ body {
 }
 
 .site-wrap {
-    @include whb(100%, 100vh, #eee);
+    @include whb(100%, auto, #eee);
+    min-height : 100vh;
 }
