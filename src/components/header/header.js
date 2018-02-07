@@ -11,11 +11,11 @@ class Header extends React.Component {
             item  = li.map( (i) => <li key={i}> </li>)
         
         return(
-            <div className="header">
+            <header className="header">
                 <ul className="bubble">
                     {item}
                 </ul>
-            </div>
+            </header>
         )
     }
 }

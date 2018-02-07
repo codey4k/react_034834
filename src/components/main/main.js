@@ -6,11 +6,11 @@ import './main.scss'
 class Main extends React.Component {
     render() {
         return(
-            <div className="main">
+            <main className="main">
                 <div className="main__container">
                    
                 </div>
-            </div>
+            </main>
         )
     }
 }

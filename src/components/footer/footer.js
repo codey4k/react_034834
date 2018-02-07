@@ -5,9 +5,9 @@ import './footer.scss'
 class Footer extends React.Component {
     render() {
         return(
-            <div className="footer">
+            <footer className="footer">
                 
-            </div>
+            </footer>
         )
     }
 }
