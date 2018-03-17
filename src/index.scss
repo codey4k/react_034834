@@ -2,17 +2,24 @@
 
 @import './styles/modules.scss';
 
+:root {
+    --theme : #444;
+    
+    --bg : #eee;
+}
+
+
+/* ------ reset default styles*/
 
 * {
     margin : 0;
     padding : 0;
+    border : none;
     outline : none;
     box-sizing : border-box;
     transition : all .6s;
 }
 
-
-/* ------ reset default styles*/
 div,
 img,
 main,
@@ -29,26 +36,26 @@ ul {
 }
 
 a {
+    color : transparent;
     text-decoration : none;
 }
-
 /*----------------------------*/
 
 
 body {
-    background : #eee;
+    background : var(--bg);
     font-family : Helvetica;
     &::-webkit-scrollbar {
         width : 6px;
-        background : #fff;
+        background : var(--bg);
     }
     &::-webkit-scrollbar-thumb {
-        background : $theme;
+        background : var(--theme);
         border-radius : 5px;
     }
 }
 
 .site-wrap {
-    @include whb(100%, auto, #eee);
+    @include whb(100%, auto, transparent);
     min-height : 100vh;
 }

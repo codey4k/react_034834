@@ -3,7 +3,7 @@
 .header {
     width : 100%;
     height : 300px;
-    background : $theme;
+    background : var(--theme);
     overflow : hidden;
     .bubble {
         position : relative;
